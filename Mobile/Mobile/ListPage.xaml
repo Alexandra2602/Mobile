@@ -4,12 +4,18 @@
              x:Class="Mobile.ListPage"
              xmlns:local="clr-namespace:Mobile">
     <StackLayout Margin="20">
-        <Editor Placeholder="Enter the description of the room"  Text="{Binding Description}" HeightRequest="100" >
+        <Editor Placeholder=" Enter your name"  Text="{Binding Name}" HeightRequest="100" >
+            
             <Editor.Behaviors>
                 <local:ValidationBehaviour />
             </Editor.Behaviors>
         </Editor>
-        <Button Text="Add/Choose Item to buy" Clicked="OnChooseButtonClicked"/>
+
+  
+        <Editor Placeholder=" Enter the check-in date"  Text="{Binding CheckinDate}" HeightRequest="100" />
+        <Editor Placeholder=" Enter the check-out date"  Text="{Binding CheckoutDate}" HeightRequest="100" />
+
+        <Button Text="Add your rooms" Clicked="OnChooseButtonClicked"/>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />

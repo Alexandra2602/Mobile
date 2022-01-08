@@ -21,7 +21,7 @@ namespace Mobile
         async void OnSaveButtonClicked(object sender, EventArgs e)
         {
             var rlist = (RoomList)BindingContext;
-            rlist.Date = DateTime.UtcNow;
+            rlist.CheckinDate = DateTime.UtcNow;
             await App.Database.SaveRoomListAsync(rlist);
             await Navigation.PopAsync();
         }

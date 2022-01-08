@@ -4,7 +4,7 @@
              x:Class="Mobile.CamPage">
     <ContentPage.Content>
         <StackLayout Margin="20">
-            <Editor Placeholder="Enter room name" Margin="20" Text="{Binding Description}" HeightRequest="50" />
+            <Editor Placeholder="Enter the type of room" Margin="20" Text="{Binding Description }" HeightRequest="50" />
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />

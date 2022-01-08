@@ -10,12 +10,12 @@
         </StackLayout>
     </ContentPage.Content>
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add Room List" Clicked="OnRoomListAddedClicked" />
+        <ToolbarItem Text="Make a reservation" Clicked="OnRoomListAddedClicked" />
     </ContentPage.ToolbarItems>
     <ListView x:Name="listView" Margin="20" ItemSelected="OnListViewItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text="{Binding Description}" Detail="{Binding Date}" />
+                <TextCell Text="{Binding Name }" Detail="{Binding CheckinDate}" />
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
